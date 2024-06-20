@@ -1,0 +1,17 @@
+@import "../../variable.scss";
+
+.container {
+  background-color: $themeWhite;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 0 #0000001A;
+}
+.text {
+  margin: 0;
+  font-weight: 600;
+  text-align: left;
+  color: $themeBlack;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  padding: 20px 20px 10px 20px;
+}

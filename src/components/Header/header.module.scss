@@ -1,0 +1,12 @@
+.header {
+  margin: 40px 0 25px 0;
+  grid-area: header;
+
+  @media screen and (max-width: 700px) {
+    margin: 15px 0 0 0;
+  }
+}
+.logo {
+  width: 90px;
+  height: 90px;
+}

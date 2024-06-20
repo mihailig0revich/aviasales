@@ -1,0 +1,16 @@
+@import "../../variable.scss";
+
+.moreBtn {
+  border: none;
+  outline: none;
+  background-color: $themeBlue;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  font-weight: 600;
+  color: $themeWhite;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}

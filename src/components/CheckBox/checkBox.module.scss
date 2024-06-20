@@ -1,0 +1,73 @@
+@import "../../variable.scss";
+
+.container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+
+  &:last-child {
+    padding-bottom: 20px;
+  }
+  &:hover {
+    background-color: $themeLightBlue;
+  }
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  height: 18px;
+  width: 18px;
+  border-radius: 2px;
+  border: 1px solid #9ABBCE;
+  margin-right: 10px;
+}
+
+.text {
+  font-weight: normal;
+  color: $themeBlack;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-size: 13px;
+  margin: 0;
+}
+
+.container:hover input ~ .checkmark {
+  border-color: $themeBlue;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: $themeWhite;
+  border: 1px solid $themeBlue;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 27px;
+  top: 14px;
+  width: 4px;
+  height: 8px;
+  border: solid $themeBlue;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

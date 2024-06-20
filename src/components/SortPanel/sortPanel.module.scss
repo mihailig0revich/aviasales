@@ -1,0 +1,40 @@
+@import "../../variable.scss";
+
+.sortPanel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.btn {
+  outline: none;
+  background-color: $themeWhite;
+  flex-grow: 1;
+  cursor: pointer;
+  border: 1px solid $themeGray;
+  height: 50px;
+  border-radius: 0;
+  font-weight: 600;
+  color: $themeBlack;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+
+  &_active {
+    color: $themeWhite;
+    background-color: $themeBlue;
+  }
+}
+
+.left {
+  border-right: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.right {
+  border-left: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
